@@ -1,5 +1,15 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  function reverseWord(word) {
+    return word.toString().split("").reverse().join("");
+  }
+
+  const reversedWord = reverseWord(word)
+  if (word.toLowerCase() === reversedWord.toLowerCase()) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /* 
